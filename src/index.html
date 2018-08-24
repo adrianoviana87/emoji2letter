@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Emoji2Text</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Bow</h1>
+      <div class="row">
+        <div class="col-sm-12">
+          <form id="emojiForm" autocomplete="off">
+            <div class="form-group">
+              <label for="text">Text</label>
+              <input type="text" class="form-control form-control-lg" autofocus autocomplete="off" id="text" aria-describedby="textHelp" placeholder="guts">
+              <small id="textHelp" class="form-text text-muted">Text to be converted to emoji</small>
+            </div>
+            <div class="form-group">
+              <label for="emojiChar">Emoji</label>
+              <input type="text" class="form-control" id="emojiChar" aria-describedby="emojiCharHelp" placeholder=":smile:">
+              <small id="emojiCharHelp" class="form-text text-muted">This will be used to write the letter.</small>
+            </div>
+            <div class="form-group">
+              <label for="emojiBlank">White space emoji</label>
+              <input type="text" class="form-control" id="emojiBlank" aria-describedby="emojiBlankHelp" placeholder=":blank:">
+              <small id="emojiBlankHelp" class="form-text text-muted">Whitespace will be replaced by this emoji.</small>
+            </div>
+            <button type="submit" class="btn btn-primary">Convert</button>
+          </form>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="card" id="convertedTextCard">
+            <div class="card-body">
+              <h5 class="card-title">Converted text</h5>
+              <h6 class="card-subtitle mb-2 text-muted" id="convertedTextOriginal"></h6>
+              <p class="card-text">
+                <pre id="convertedText">
+                </pre>
+              </p>
+              <a href="#" class="card-link" id="copyToClipboardButton">Copy to clipboard</a>
+              <a href="#text" class="card-link" id="backToText">Back to text</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/emoji2letter.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
